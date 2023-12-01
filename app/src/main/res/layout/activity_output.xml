@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back2"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/resultLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/rbcStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resultLabel"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/wbcStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbcStatusTextView"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/plateletStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wbcStatusTextView"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+
+
+        <TextView
+            android:id="@+id/diseasesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plateletStatusTextView"
+            android:layout_marginTop="@dimen/_20sp"
+            android:text="@string/potential_diseases"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/diseaseCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/diseasesTextView"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/diseasesListTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/symptomsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diseaseCard"
+            android:layout_marginTop="@dimen/_20sp"
+            android:text="@string/symptoms"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/symptomCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/symptomsTextView"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/symptomsListTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/symptomCard"
+            android:layout_marginTop="@dimen/_30sp"
+            android:text="@string/go_home"
+            android:onClick="goBackToBloodTestForm" />
+
+    </RelativeLayout>
+</ScrollView>

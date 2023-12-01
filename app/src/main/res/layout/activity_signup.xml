@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D5E8E7"
+    tools:context=".SignupActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="8dp"
+                android:hint="Name"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edtBloodGroup"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="8dp"
+                android:hint="Blood Group"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="  Choose Gender:"
+                android:textColor="#454747"
+                android:textSize="18dp"/>
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:layout_below="@id/edtBloodGroup"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edtPass1"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:text="Sign Up"
+                android:textSize="18sp"
+                app:cornerRadius="30dp" />
+
+            <TextView
+                android:id="@+id/loginRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="Already an user? Login"
+                android:onClick="navigateToLogin"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

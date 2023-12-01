@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_marginTop="@dimen/_30sp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+    <!-- Card 1 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodTest"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:elevation="4dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <!-- Logo for Card 1 -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/blood_test"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <!-- Text for Card 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_test"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 2 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bilirubinTest"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:elevation="4dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <!-- Logo for Card 2 -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/bilurubin"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <!-- Text for Card 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bilirubin_test"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/diabetesTest"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:elevation="4dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <!-- Logo for Card 2 -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/diabetes"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <!-- Text for Card 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diabetes_test"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goBackButton"
+        android:text="@string/go_back"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+
+
+    <!-- Add similar CardViews for more cards (Card 3, Card 4, etc.) -->
+
+</LinearLayout>

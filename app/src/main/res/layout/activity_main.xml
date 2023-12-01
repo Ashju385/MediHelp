@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5E8E7"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_150pxh"
+            android:layout_marginEnd="@dimen/_65pxh"
+            android:layout_marginStart="@dimen/_65pxh"
+            android:layout_marginTop="@dimen/_155pxh"
+            android:layout_width="@dimen/_237pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img1"
+            tools:ignore="ContentDescription" tools:src="@drawable/img1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:text="@string/medihelp"
+            android:textColor="@color/blue"
+            android:textSize="36sp"/>
+    </LinearLayout>
+</RelativeLayout>
